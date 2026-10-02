@@ -1,0 +1,5 @@
+$ ./sequential_min_max 100 0 100 42\nmin = 12, max = 995
+\n$ ./parallel_min_max 100 0 100 42\nmin = 12, max = 995
+\n$ ./parallel_min_max 100 0 100 42 by_files\nmin = 12, max = 995
+\n$ ./run_sequential 100 0 100 42\nmin = 12, max = 995
+child exited with code 0
