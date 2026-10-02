@@ -7,10 +7,10 @@ COMMON  = find_max_min.c
 all: sequential_min_max parallel_min_max run_sequential
 
 sequential_min_max: sequiential_min_max.c $(COMMON) find_max_min.h
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $(filter %.c,$^)
 
 parallel_min_max: parallel_min_max.c $(COMMON) find_max_min.h
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $(filter %.c,$^)
 
 run_sequential: run_sequential.c
 	$(CC) $(CFLAGS) -o $@ $^
