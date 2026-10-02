@@ -1,0 +1,8 @@
+sequential_min_max
+parallel_min_max
+run_sequential
+child_result.txt
+parent_result.txt
+*.o
+*.zip
+.DS_Store
